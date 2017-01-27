@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ChatIO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="container">
+    <div id="namesWrapper">
+        <h2>ChatIO</h2>
+        <p>Create UserName</p>
+        <div id="error"> </div>
+        <form id="usernameForm">
+            <input size="35" id="username">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="mainWrapper">
+        <h2>ChatIO</h2>
+        <div id="chatWrapper">
+            <div id="chatWindow">
+
+            </div>
+            <form id="messageForm">
+                <input size="35" id="message" placeholder="Type Here">
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <div id="userWrapper">
+            <div id="users"></div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
